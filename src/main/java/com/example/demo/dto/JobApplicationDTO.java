@@ -1,8 +1,6 @@
-package com.example.demo;
+package com.example.demo.dto;
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import com.example.demo.model.Status;
 
 import java.time.LocalDate;
 

@@ -1,5 +1,12 @@
 package com.example.demo;
 
+import com.example.demo.dto.JobApplicationDTO;
+import com.example.demo.model.JobApplication;
+import com.example.demo.model.Status;
+import com.example.demo.model.User;
+import com.example.demo.repository.JobApplicationRepository;
+import com.example.demo.repository.UserRepository;
+import com.example.demo.service.JobApplicationService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -11,13 +18,13 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
-import org.mockito.Mockito;
+
 import static org.mockito.ArgumentMatchers.any;
 
-import static com.example.demo.Status.INTERVIEW;
+import static com.example.demo.model.Status.INTERVIEW;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.times;
-import static com.example.demo.Status.APPLIED;
+import static com.example.demo.model.Status.APPLIED;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;

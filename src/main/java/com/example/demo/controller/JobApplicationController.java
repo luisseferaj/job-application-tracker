@@ -1,8 +1,11 @@
-package com.example.demo;
+package com.example.demo.controller;
 
+import com.example.demo.model.JobApplication;
+import com.example.demo.dto.JobApplicationDTO;
+import com.example.demo.service.JobApplicationService;
+import com.example.demo.model.Status;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

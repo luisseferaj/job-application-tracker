@@ -1,9 +1,14 @@
-package com.example.demo;
+package com.example.demo.service;
 
+import com.example.demo.dto.JobApplicationDTO;
+import com.example.demo.model.JobApplication;
+import com.example.demo.model.Status;
+import com.example.demo.model.User;
+import com.example.demo.repository.JobApplicationRepository;
+import com.example.demo.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
